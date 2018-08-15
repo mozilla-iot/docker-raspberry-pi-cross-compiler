@@ -13,7 +13,11 @@ RUN apt-get update \
         make \
         runit \
         sudo \
-        xz-utils
+        xz-utils \
+        pkg-config \
+        python \
+        python2.7 \
+        unzip
 
 # Here is where we hardcode the toolchain decision.
 ENV HOST=arm-linux-gnueabihf \
@@ -51,6 +55,7 @@ RUN curl -Ls https://github.com/sdhibit/docker-rpi-raspbian/raw/master/raspbian.
         && DEBIAN_FRONTEND=noninteractive apt-get install -y \
                 libc6-dev \
                 symlinks \
+                libudev-dev \
         && symlinks -cors /'
 
 COPY image/ /
