@@ -11,6 +11,7 @@ RUN apt-get update \
         g++ \
         git \
         make \
+	patchelf \
         runit \
         sudo \
         xz-utils \
