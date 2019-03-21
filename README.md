@@ -7,8 +7,8 @@ To update:
 
 ```
 git checkout rpxc-stretch
-docker build .
-docker push dhylands/docker-raspberry-pi-cross-compiler
+./build.sh
+./push.sh
 ```
 
 If you use an account other that dhylands, then update
