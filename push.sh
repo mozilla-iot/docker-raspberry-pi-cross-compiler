@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/bash -e
 
-: ${RPXC_IMAGE:=dhylands/raspberry-pi-cross-compiler-stretch}
+: ${RPXC_IMAGE:=mozillaiot/raspberry-pi-cross-compiler-stretch}
 
 docker push $RPXC_IMAGE
